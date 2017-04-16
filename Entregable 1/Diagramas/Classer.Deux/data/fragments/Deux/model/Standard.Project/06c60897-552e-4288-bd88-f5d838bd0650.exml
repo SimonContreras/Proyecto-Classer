@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Deux" version="4">
+  <OBJECT>
+    <ID name="Deux" mc="Standard.Project" uid="06c60897-552e-4288-bd88-f5d838bd0650"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Deux]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="deux" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Deux" mc="Infrastructure.DiagramSet" uid="ca0009b1-59db-42a8-b361-e78097bc8773"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
