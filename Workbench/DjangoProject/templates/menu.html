@@ -39,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{% url 'menu' %}">
                     <img src="{% static 'img/Logo.png' %}" height="20px">
                 </a>
             </div>
@@ -48,7 +48,7 @@
                 <ul class="nav navbar-nav">
                     {% block ventanas %}
                     <li class="active">
-                        <a href="#">Información</a>
+                        <a href="#">Material</a>
                     </li>
                     <li>
                         <a href="#">Tags</a>
@@ -83,25 +83,22 @@
 
         <div class="row">
 
-            <div class="col-md-3" >
+            <div class="col-xs-3" >
                 <div class="container-fluid" data-spy="affix">
                     {% block columna %}
                         <p class="lead">¿Qué deseas ver?</p>
                         <ul class="list-group">
                             {% block Item %}
-                            <a href="{% url 'showdata' %}" class="list-group-item">Texto</a>
-                            <a href="#" class="list-group-item">Descripciones</a>
-                            <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
-                            <a href="#" class="list-group-item">Ejercicios</a>
-                            <a data-toggle="collapse" class="list-group-item" href="#collapse1">Información</a>
+                            <a class="list-group-item" href="{% url 'showdata' %}">Información</a>
                                 <div id="collapse1" class="panel-collapse collapse" style="border-left:1px solid silver; border-right:1px solid silver;">
                                     <ul>
-                                        <span class="glyphicon glyphicon-menu-right" ></span><a> Analogías</a><br>
+                                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Analogías</a><br>
                                         <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejercicios</a><br>
                                         <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejemplos</a>
                                     </ul>
                                 </div>
-                            <a href="#" class="list-group-item">Link</a>
+                            <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
+                            <a href="#" class="list-group-item">Videos</a>
                             {% endblock %}
                         </ul>
                     {% endblock %}

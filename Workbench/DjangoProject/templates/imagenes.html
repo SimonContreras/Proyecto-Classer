@@ -4,13 +4,16 @@
 {% block title %}Imagenes{% endblock%}
 
 {% block Item %}
-    <a href="{% url 'showdata' %}" class="list-group-item">Texto</a>
-    <a href="#" class="list-group-item">Descripciones</a>
+    <a class="list-group-item" href="{% url 'showdata' %}">Información</a>
+        <div id="collapse1" class="panel-collapse collapse" style="border-left:1px solid silver; border-right:1px solid silver;">
+            <ul>
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Analogías</a><br>
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejercicios</a><br>
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejemplos</a>
+            </ul>
+        </div>
     <a href="{% url 'imagenes' %}" class="list-group-item active">Imágenes</a>
-    <a href="#" class="list-group-item">Ejercicios</a>
-    <a href="#" class="list-group-item">Ejemplos</a>
-    <a href="#" class="list-group-item">Analogías</a>
-    <a href="#" class="list-group-item">Link</a>
+    <a href="#" class="list-group-item">Videos</a>
 {% endblock %}
 
 {% block content %}
