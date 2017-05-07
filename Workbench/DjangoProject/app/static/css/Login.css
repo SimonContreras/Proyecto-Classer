@@ -1,0 +1,48 @@
+body{
+	background: red;
+}
+
+.login{
+	margin: auto;
+}
+
+div{
+	color: #ffffff;
+	background: #896253;
+	width: 300px;
+	height: 100%;
+	border: #000000 solid 3px;
+	padding: 20px;
+}
+
+label{
+	font-size: 12px;
+	display: block;
+}
+
+h1{
+	text-align: center;
+}
+
+input{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+input:focus{
+	border: 2px solid #1668c4;
+}
+
+input[type="submit"]{
+	margin-bottom: 0;
+	background: #1668c4;
+	color: #ffffff;
+	border: none;
+}
+
+input[type="submit"]:hover{
+	background: #4a88f4;
+	cursor: pointer;
+}

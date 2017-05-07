@@ -1,0 +1,110 @@
+{%  load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/loginin.css' %}">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-xs-6 col-md-offset-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2>Bienvenido a Classer</h2>
+                </div>
+
+                <div class="panel-body">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class="active"><a data-toggle="tab" href="#home">Ingresar</a></li>
+                        <li><a data-toggle="tab" href="#menu1">Registrarse</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active"> <br>
+                            <form id="loginForm" method="post">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+
+                                <div id="loginErrorMsg" class="alert alert-error hide">Contraseña o Usuario incorrectos</div>
+                                <button type="submit" class="btn btn-success btn-block">Acceder</button>
+                            </form>
+                        </div>
+                        <div id="menu1" class="tab-pane fade"> <br>
+                            <form id="loginForm" method="POST">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <div class="form-group">
+                                    <label for="username" class="control-label">Nombre de ususario:</label>
+                                    <input type="text" class="form-control" id="username" name="username" value="" required title="Please enter you username" placeholder="Usuario">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Contraseña:</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required title="Please enter your password" placeholder="Contraseña">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Repitir Contraseña:</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required title="Please enter your password" placeholder="Contraseña">
+                                    <span class="help-block"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Tipo de Perfil Cognitivo:</label>
+                                    <input type="password" class="form-control" id="password" name="password" value="" required title="Please enter your password" placeholder="Perfil">
+                                    <span class="help-block"></span>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-block">Registrarse</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div id="wrap">
+    <div id="regbar">
+        <div id="navthing">
+            <h2><a href="#" id="loginform">Login</a> | <a href="#">Register</a></h2>
+            <div class="login">
+                <div class="arrow-up"></div>
+                <div class="formholder">
+                    <div class="randompad">
+                        {% block content %}
+                            <h2>Login dsadsadas</h2>
+                            <form method="post">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button type="submit">Login</button>
+                            </form>
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  <!-- script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script -->
+  <!-- script src= "{% static 'js/index.js' %}" ></script -->
+</body>
+</html>
