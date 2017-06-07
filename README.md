@@ -1,7 +1,7 @@
 # Proyecto-Classer
 Proyecto Classer: Grupo Deux , Ingeniería de Software ISW 2017-1 CSSJ
 
-#### Versión Online en : [simoncm.pythonanywhere.com](http://simoncm.pythonanywhere.com/)
+#### Versión Online en Actualización
 
 ### Versiones:
 
@@ -15,6 +15,17 @@ Proyecto Classer: Grupo Deux , Ingeniería de Software ISW 2017-1 CSSJ
 * scrapy-djangoitem
 * bs4
 * twisted
+* textblob
+* google-cloud
+* google-cloud-language
+* google-cloud-translate
+* pickle
+* os
+* urllib
+* PIL
+* sys
+* itertools
+
 
 En caso de no estar instalados, se deben instalar en el directory de paquetes de su intérprete de python
 
