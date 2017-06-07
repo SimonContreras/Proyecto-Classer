@@ -13,7 +13,8 @@ import os
 import sys
 import django
 
-DJANGO_PROJECT_PATH = 'C:/Users/SimónContreras/Desktop/version 01 - Copy/Workbench/DjangoProject'
+DJANGO_PROJECT_PATH = '../../DjangoProject'
+#'C:/Users/SimónContreras/Desktop/version 01 - Copy/Workbench/DjangoProject'
 DJANGO_SETTINGS_MODULE = 'DjangoProject.settings'
 sys.path.insert(0, DJANGO_PROJECT_PATH)
 os.environ['DJANGO_SETTINGS_MODULE'] = DJANGO_SETTINGS_MODULE

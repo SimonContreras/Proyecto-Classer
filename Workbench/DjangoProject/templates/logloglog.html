@@ -14,52 +14,35 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
-        <div class="col-xs-6 col-md-offset-3">
-           <h2 STYLE="font-size: 100px;color:black; text-shadow: 0 0px 0 #ccc,
-               0 1px 0 #c9c9c9,
-               0 2px 0 #bbb,
-               0 3px 0 #b9b9b9,
-               0 4px 0 #aaa,
-               0 5px 1px rgba(0,0,0,.1),
-               0 0 3px rgba(0,0,0,.1),
-               0 1px 2px rgba(0,0,0,.3),
-               0 2px 3px rgba(0,0,0,.2),
-               0 3px 7px rgba(0,0,0,.25),
-               0 7px 7px rgba(0,0,0,.2),
-               0 7px 10px rgba(0,0,0,.15); ">&nbsp;&nbsp;Classer
-           </h2>
+        <div class=" col-sm-offset-3 col-sm-6">
 
             <div class="panel-body">
+                <div class="col-md-offset-1 col-md-10 ">
+                    <h1 class="logo">Classer</h1>
+                    {% block content %}
+                    <!-- ASI SE HACEN LOS FORMS -->
+                    <form method="post" action="">{% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="username" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" placeholder="Contraseña"/>
+                        </div>
+                        <button type="submit" class="btn btn-info btn-block">Acceder</button>
+                        <div  data-reactid="56"><br>
+                            <!-- react-text: 57 -->¿Primera vez en Classer? <!-- /react-text -->
+                            <a c  href="/signup" >Registrate ya</a>
+                            <!-- react-text: 59 -->.<!-- /react-text -->
+                        </div>
+                    </form>
 
-
-
-
-
-             <div class="col-xs-10 ">
-
-                        {% block content %}
-                        <!-- ASI SE HACEN LOS FORMS -->
-                        <form method="post" action="">{% csrf_token %}
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="username" placeholder="Usuario"/>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" name="password" placeholder="Contraseña"/>
-                            </div>
-                            <button type="submit" class="btn btn-info btn-block">Acceder</button>
-<div  data-reactid="56"><br><!-- react-text: 57 -->¿Primera vez en Classer? <!-- /react-text --><a c  href="/signup" >Registrate ya</a><!-- react-text: 59 -->.<!-- /react-text --></div>
-                        </form>
-
-                        <!-- HASTA AQUI -->
-                         {% endblock %}
-
-
-             </div>
+                    <!-- HASTA AQUI -->
+                    {% endblock %}
+                </div>
             </div>
         </div>
-
     </div>
 
     <!-- jQuery -->

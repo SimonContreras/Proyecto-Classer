@@ -27,6 +27,10 @@ body {
     color: #333;
 }
 
+textarea{
+    resize: none;
+}
+
 footer {
     margin: 50px 0;
 }
@@ -36,4 +40,15 @@ footer {
     height: auto !important;
     margin: 0 auto; /* el magin-bottom es el valor negativo de
     la altura del footer */
+}
+
+@media (max-width: 991px) {
+    #buscador{
+        width: 80px;
+    }
+}
+@media (max-width: 768px) {
+    #buscador{
+        width: 100%;
+    }
 }

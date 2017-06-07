@@ -16,6 +16,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ScrapyProject" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Textblob" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TextClassifier" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.6.1 (C:\Users\SimónContreras\AppData\Local\Programs\Python\Python36\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

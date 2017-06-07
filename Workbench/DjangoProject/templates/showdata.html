@@ -3,26 +3,57 @@
 {% block title %}Temas{% endblock%}
 
 {% block Item %}
-    <a href="{% url 'showdata' %}" class="list-group-item active">Texto</a>
-    <a href="#" class="list-group-item">Descripciones</a>
+    <a class="list-group-item active" href="{% url 'showdata' %}">Información</a>
     <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
-    <a href="#" class="list-group-item">Ejercicios</a>
-    <a href="#" class="list-group-item">Ejemplos</a>
-    <a href="#" class="list-group-item">Analogías</a>
-    <a href="#" class="list-group-item">Link</a>
+    <a href="#" class="list-group-item">Videos</a>
 {% endblock %}
 
 {% block content %}
 
-    {% for img in all_data %}
+    {% for img, tags in all_data %}
          <div class="col-md-9">
             <div class="thumbnail">
                 <div class="caption-full">
-                    <h4> {{ img.topic }} </h4>
+                    <button id="Boton{{ forloop.counter0 }}" type="button" class="btn btn-danger pull-right" data-toggle="collapse" data-target="#Tags{{ forloop.counter }}">
+                        Tags
+                    </button>
+                    <h4> {{ img.topic }} <small>({{ img.classification }})</small> </h4>
                     <a href="{{ img.url }}" target="_blank">{{ img.url }}</a>
                         <p>{{ img.information }}</p>
                 </div>
             </div>
         </div>
+        <div id="Tags{{ forloop.counter }}" class="col-md-9 collapse">
+            <div class="thumbnail">
+                <div class="caption-full">
+                    <h4>Tags</h4>
+                    <ul>
+                        {% for tag in tags.0 %}
+                            {% for url in tags.1 %}
+                                {% if forloop.counter == forloop.parentloop.counter %}
+                                    {% if url == 'None' %}
+                                        <li>{{ tag }}</li>
+                                    {% else %}
+                                        <li><a href="{{ url }}" target="_blank">{{ tag }}</a></li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </ul>
+                    <button class="btn btn-success" data-toggle="collapse" data-target="#Editor{{ forloop.counter }}">
+                       Editar
+                    </button>
+                    <div class="form-group collapse" id="Editor{{ forloop.counter }}">
+                        <label>Seleccione el valor que corresponda:</label>
+                        <select>
+                            <option>Ejercicio</option>
+                            <option>Analogía</option>
+                            <option>Ejemplo</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     {% endfor %}
 {% endblock %}
