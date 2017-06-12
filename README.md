@@ -16,6 +16,7 @@ Proyecto Classer: Grupo Deux , Ingeniería de Software ISW 2017-1 CSSJ
 * bs4
 * twisted
 * textblob
+* Coropora para textblob: python -m textblob.download_corpora
 * google-cloud
 * google-cloud-language
 * google-cloud-translate
@@ -25,6 +26,7 @@ Proyecto Classer: Grupo Deux , Ingeniería de Software ISW 2017-1 CSSJ
 * PIL
 * sys
 * itertools
+
 
 
 En caso de no estar instalados, se deben instalar en el directory de paquetes de su intérprete de python
