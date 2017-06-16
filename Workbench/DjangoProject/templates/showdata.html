@@ -5,7 +5,7 @@
 {% block Item %}
     <a class="list-group-item active" href="{% url 'showdata' %}">Información</a>
     <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
-    <a href="#" class="list-group-item">Videos</a>
+    <a href="{% url 'videos' %}" class="list-group-item">Videos</a>
 {% endblock %}
 
 {% block content %}

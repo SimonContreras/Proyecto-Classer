@@ -1,7 +1,7 @@
 {% extends 'menu.html' %}
 {% load staticfiles %}
 
-{% block title %}Imagenes{% endblock%}
+{% block title %}Videos{% endblock%}
 
 {% block Item %}
     <a class="list-group-item" href="{% url 'showdata' %}">Información</a>
@@ -12,18 +12,18 @@
                 <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejemplos</a>
             </ul>
         </div>
-    <a href="{% url 'imagenes' %}" class="list-group-item active">Imágenes</a>
-    <a href="{% url 'videos' %}" class="list-group-item">Videos</a>
+    <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
+    <a href="{% url 'videos' %}" class="list-group-item active">Videos</a>
 {% endblock %}
 
 {% block content %}
-    {% for img in all_data %}
+    {% for video in all_videos %}
         <div class="col-md-9">
             <div class="thumbnail">
                 <div class="caption-full">
-                    <h4> {{ img.topic }} </h4>
-                    <a href="{{ img.url }}" target="_blank">{{ img.url }}</a>
-                    <img src= "{{ img.information }}" class="img-rounded" height="{{ img.height }}" width="{{ img.width }}" >
+                    <h4> {{ video.topic }} </h4>
+                    <a href="{{ video.url }}" target="_blank">{{ video.url }}</a>
+                     <iframe width="560" height="315" src="{{ video.information }}" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

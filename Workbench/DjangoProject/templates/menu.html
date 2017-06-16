@@ -75,7 +75,7 @@
                         <a href="{% url 'imagenes' %}">Imágenes</a>
                     </li>
                     <li>
-                        <a href="#">Videos</a>
+                        <a href="{% url 'videos' %}">Videos</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav">
@@ -145,7 +145,7 @@
                                     </ul>
                                 </div>
                             <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
-                            <a href="#" class="list-group-item">Videos</a>
+                            <a href="{% url 'videos' %}" class="list-group-item">Videos</a>
                             {% endblock %}
                         </ul>
                     {% endblock %}

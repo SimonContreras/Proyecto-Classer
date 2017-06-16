@@ -20,20 +20,21 @@ from django.views.generic.base import TemplateView
 from app import views as core_views
 from django.conf import settings
 from django.conf.urls.static import static
-
+from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', auth_views.login, {'template_name': 'logloglog.html'}, name='login'),
-    url(r'^menu/$', TemplateView.as_view(template_name='menu.html'), name='menu'),
+    url(r'^menu/$', login_required(TemplateView.as_view(template_name="menu.html")), name='menu'),
     url(r'^login/$', auth_views.login, {'template_name': 'logloglog.html'}, name='login'),
     url(r'^logout/$', auth_views.logout, {'template_name': 'logout.html'}, name='logout'),
     url(r'^signup/$', core_views.signup,  name='signup'),
-    url(r'^menu/imagenes/$', core_views.imagenes, name='imagenes'),
-    url(r'^menu/showdata/$', core_views.showdata, name='showdata'),
-    url(r'^menu/classify_example/$', core_views.classify_example, name='classify_example'),
-    url(r'^menu/entities_example/$', core_views.entities_example, name='entities_example'),
-    url(r'^menu/classify/upload_file/$', core_views.file_upload, name='upload_file'),
+    url(r'^menu/imagenes/$', login_required(core_views.imagenes), name='imagenes'),
+    url(r'^menu/showdata/$', login_required(core_views.showdata), name='showdata'),
+    url(r'^menu/classify_example/$', login_required(core_views.classify_example), name='classify_example'),
+    url(r'^menu/entities_example/$', login_required(core_views.entities_example), name='entities_example'),
+    url(r'^menu/classify/upload_file/$', login_required(core_views.file_upload), name='upload_file'),
+    url(r'^menu/videos/$', login_required(core_views.show_videos), name='videos'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

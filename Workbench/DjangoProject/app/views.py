@@ -1,7 +1,7 @@
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
 from app.forms import SignUpForm, ClassifyForm, DocumentForm
-from app.models import ScrapedData, ScrapedImage
+from app.models import ScrapedData, ScrapedImage, ScrapedVideo
 from itertools import chain
 #first change the cwd to the script path
 import os
@@ -94,3 +94,8 @@ def file_upload(request):
     else:
         form = DocumentForm()
     return render(request, 'upload_document.html', {'form': form})
+
+
+def show_videos(request):
+    all_videos = ScrapedVideo.objects.all()
+    return render(request, 'videos.html', {'all_videos': all_videos})

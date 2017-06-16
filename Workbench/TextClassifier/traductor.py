@@ -344,6 +344,7 @@ exercise = [
     'Un rectángulo de metal está cerca de un alambre largo, recto y que conduce corriente, con dos de sus lados paralelos al alambre. Si la corriente en el alambre largo está disminuyendo, ¿el rectángulo es repelido o atraído por el alambre? Explique por qué es congruente este resultado con la ley de Lenz.',
     ' Se coloca una lámina de cobre entre los polos de un electroimán con el campo magnético perpendicular a la lámina. Cuando se tira de la lámina hacia fuera, se requiere una fuerza considerable, la cual aumenta con la rapidez. Explique este fenómeno.',
     ' ¿Se puede tener una corriente de desplazamiento además de una corriente de conducción dentro de un conductor? Explique su respuesta.',
+    'Si el radio de una circunferencia es igual a 4 ¿Cuál es su diámetro?',
 ]
 
 # CREACION DATA PARA DEFINICION
@@ -352,7 +353,7 @@ training1 = []
 translate_client = translate.Client.from_service_account_json('client_key.json')
 for sentence in definition:
     translation = translate_client.translate(sentence, target_language='en', format_='text', source_language='es')
-    training1.append((translation['translatedText'], 'definición'))
+    training1.append((translation['translatedText'], 'Definición'))
 #print(training)
 #FIN DATA DEFINICION
 
@@ -364,7 +365,7 @@ training2 = []
 translate_client = translate.Client.from_service_account_json('client_key.json')
 for sentence in exercise:
     translation = translate_client.translate(sentence, target_language='en', format_='text', source_language='es')
-    training2.append((translation['translatedText'], 'ejercicio'))
+    training2.append((translation['translatedText'], 'Ejercicio'))
 #print(training2)
 #FIN DATA EJERCICIOS
 
@@ -376,7 +377,7 @@ print(len(training))
 
 classificator = NaiveBayesClassifier(training)
 
-save_file = open('classificator_bayes.pickle', 'wb')
+save_file = open('classificator_bayes2.pickle', 'wb')
 pickle.dump(classificator, save_file)
 save_file.close()
 
@@ -384,5 +385,5 @@ sentence = '¿Cuáles son las ventajas y desventajas de cada sistema?'
 translated = translate_client.translate(sentence, target_language='en', format_='text', source_language='es')
 
 
-clasificated = classificator.classify(translated['translatedText'])
+clasificated = classificator.classify('Si el radio de una circunferencia es igual a 4 ¿Cuál es su diámetro?')
 print(clasificated)

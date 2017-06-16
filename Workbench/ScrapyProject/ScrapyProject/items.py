@@ -8,6 +8,7 @@
 from scrapy_djangoitem import DjangoItem
 from app.models import ScrapedData
 from app.models import ScrapedImage
+from app.models import ScrapedVideo
 
 
 class ScrapedDataItem(DjangoItem):
@@ -16,4 +17,9 @@ class ScrapedDataItem(DjangoItem):
 
 class ScrapedImageItem(DjangoItem):
     django_model = ScrapedImage
+
+
+class ScrapedVideoItem(DjangoItem):
+    django_model = ScrapedVideo
+
 
