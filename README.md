@@ -1,7 +1,7 @@
 # Proyecto-Classer
 Proyecto Classer: Grupo Deux , Ingeniería de Software ISW 2017-1 CSSJ
 
-#### Versión Online Actualizada: [Classer](http://simoncm.pythonanywhere.com/)
+#### Versión Online Versión antigua, se espera actualizar versión online para el (18/06/22017): [Classer](http://simoncm.pythonanywhere.com/)
 
 ### Versiones:
 
