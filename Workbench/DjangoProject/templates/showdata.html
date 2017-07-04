@@ -2,16 +2,52 @@
 
 {% block title %}Temas{% endblock%}
 
+{% block buscador %}
+    <div class="hidden-sm hidden-md hidden-lg">
+        <form class="navbar-form form-inline navbar-right" method="post">{% csrf_token %}
+            <div class="form-group">
+                <input id="buscador" name = "buscador" type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-info btn-block "><span class="glyphicon glyphicon-search"></span> Buscar</button>
+        </form>
+    </div>
+{% endblock %}
+
 {% block Item %}
     <a class="list-group-item active" href="{% url 'showdata' %}">Información</a>
     <a href="{% url 'imagenes' %}" class="list-group-item">Imágenes</a>
     <a href="{% url 'videos' %}" class="list-group-item">Videos</a>
+    <br>
+    <button id="show" class="btn btn-success btn-block" >Editar Información</button><br>
+    <button id="hide" type="submit" class="btn btn-warning btn-block editar">Cancelar Edición</button>
+    <br>
+    <div class="hidden-xs hidden-md hidden-lg">
+        <form class="navbar-form form-inline navbar-right hidden-xs hidden-md hidden-lg" method="post">{% csrf_token %}
+            <div class="form-group">
+                <input id="buscador" name = "buscador" type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-info btn-block"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+        </form>
+    </div>
 {% endblock %}
 
 {% block content %}
 
+    <div class="hidden-xs hidden-sm col-md-3 pull-right">
+        <div style="position: fixed;">
+            <form class="navbar-form form-inline navbar-right" method="post">{% csrf_token %}
+                <div class="form-group">
+                    <input id="buscador" name = "buscador" type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <!-- Posee dos botones por estética pero ambos funcionan -->
+                <button type="submit" class="btn btn-info hidden-xs hidden-sm"><span class="glyphicon glyphicon-search"></span></button>
+                <button type="submit" class="btn btn-info btn-block hidden-md hidden-lg"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            </form>
+        </div>
+    </div>
+
     {% for img, tags in all_data %}
-         <div class="col-md-9">
+        <div class="col-md-9">
             <div class="thumbnail">
                 <div class="caption-full">
                     <button id="Boton{{ forloop.counter0 }}" type="button" class="btn btn-danger pull-right" data-toggle="collapse" data-target="#Tags{{ forloop.counter }}">
@@ -19,7 +55,14 @@
                     </button>
                     <h4> {{ img.topic }} <small>({{ img.classification }})</small> </h4>
                     <a href="{{ img.url }}" target="_blank">{{ img.url }}</a>
-                        <p>{{ img.information }}</p>
+                    <p>{{ img.information }}</p>
+                    {% if not img.data_entrenamiento %}
+                        <form method="post">{% csrf_token %}
+                            <button id="Entrenar{{ forloop.counter0 }}" name ="Entrenar" value="{{ img.id }}" type="submit" class="btn btn-warning">
+                                Utilizar para entrenar clasificador
+                            </button>
+                        </form>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -27,29 +70,55 @@
             <div class="thumbnail">
                 <div class="caption-full">
                     <h4>Tags</h4>
-                    <ul>
-                        {% for tag in tags.0 %}
-                            {% for url in tags.1 %}
-                                {% if forloop.counter == forloop.parentloop.counter %}
-                                    {% if url == 'None' %}
-                                        <li>{{ tag }}</li>
-                                    {% else %}
-                                        <li><a href="{{ url }}" target="_blank">{{ tag }}</a></li>
+                    <label class="editar" style="color: red;"> Seleccione los Tags que no correspondan:</label>
+                    <form method="post" id="edit">{% csrf_token %}
+                        <ul>
+                            {% for tag in tags.0 %}
+                                {% for url in tags.1 %}
+                                    {% if forloop.counter == forloop.parentloop.counter %}
+                                        {% if url == 'None' %}
+                                            <li class="editar" style="display: none;">
+                                                <input type="checkbox" class="css-checkbox" id="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" name="tags"  value="{{ tag }}">
+                                                <label for="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" class="css-label lite-x-red" > {{ tag }}</label>
+                                            </li>
+                                            <li class="mostrar">
+                                                <label> {{ tag }}</label>
+                                            </li>
+                                        {% else %}
+                                            <li class="editar" style="display: none;">
+                                                <input type="checkbox" class="css-checkbox"  name="tags" id="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" value="{{ tag }}">
+                                                <label for="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" class="css-label lite-x-red" ><a href="{{ url }}" target="_blank">{{ tag }}</a></label>
+                                            </li>
+                                            <li class="mostrar">
+                                                <label><a href="{{ url }}" target="_blank">{{ tag }}</a></label>
+                                            </li>
+                                        {% endif %}
                                     {% endif %}
-                                {% endif %}
+                                {% endfor %}
                             {% endfor %}
-                        {% endfor %}
-                    </ul>
-                    <button class="btn btn-success" data-toggle="collapse" data-target="#Editor{{ forloop.counter }}">
-                       Editar
-                    </button>
-                    <div class="form-group collapse" id="Editor{{ forloop.counter }}">
-                        <label>Seleccione el valor que corresponda:</label>
-                        <select>
-                            <option>Ejercicio</option>
-                            <option>Analogía</option>
-                            <option>Ejemplo</option>
-                        </select>
+                        </ul>
+                        <button type="submit" class="btn btn-primary editar" name="id" value="{{ img.id }}">Guardar Cambios</button>
+                    </form>
+                    <div id="Clasif{{ forloop.counter }}" class="editar">
+                        <form method="post" id="edit">{% csrf_token %}
+                            <br><label>Seleccione el valor que corresponda:</label> <br><br>
+
+                            <input type="radio" class="css-radio " id="checkboxD{{ forloop.counter }}" name="type" value="Definición">
+                            <label for="checkboxD{{ forloop.counter }}" class="css-labely"> Definición  </label>
+
+                            <input type="radio" class="css-radio " id="checkboxE{{ forloop.counter }}" name="type" value="Ejercicio">
+                            <label for="checkboxE{{ forloop.counter }}" class="css-labely"> Ejercicio </label><br><br>
+                            <button type="submit" class="btn btn-primary" name="id" value="{{ img.id }}">Guardar cambios</button>
+                        </form>
+                    </div>
+                    <div id="AddTags{{ forloop.counter }}" class="editar">
+                        <form method="post" id="">{% csrf_token %}
+                            <br>
+                            <label>Ingrese el Tag que desee agregar:</label> <br><br>
+                            <input type="text" name="Tagx" placeholder="Tag" required>
+                            <input type="text" name="Linkx" placeholder="URL asociado (si posee uno)" style="width: 70%"><br><br>
+                            <button type="submit" class="btn btn-primary" name="id" value="{{ img.id }}">Agregar Tag</button>
+                        </form>
                     </div>
                 </div>
             </div>

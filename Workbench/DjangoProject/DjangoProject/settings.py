@@ -26,7 +26,7 @@ SECRET_KEY = 'jw_$tp&pjpj8ha9g4pxca=&odjenk_@wf64fuomo)s%z2eab^s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['simoncm.pythonanywhere.com', '127.0.0.1', 'localhost']
 LOGIN_URL = '/login'
 
 # Application definition

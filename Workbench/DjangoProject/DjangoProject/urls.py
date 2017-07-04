@@ -32,6 +32,7 @@ urlpatterns = [
     url(r'^menu/imagenes/$', login_required(core_views.imagenes), name='imagenes'),
     url(r'^menu/showdata/$', login_required(core_views.showdata), name='showdata'),
     url(r'^menu/classify_example/$', login_required(core_views.classify_example), name='classify_example'),
+    url(r'^menu/urls/$', login_required(core_views.urls), name='urls'),
     url(r'^menu/entities_example/$', login_required(core_views.entities_example), name='entities_example'),
     url(r'^menu/classify/upload_file/$', login_required(core_views.file_upload), name='upload_file'),
     url(r'^menu/videos/$', login_required(core_views.show_videos), name='videos'),

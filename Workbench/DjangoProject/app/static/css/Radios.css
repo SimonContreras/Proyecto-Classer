@@ -1,0 +1,28 @@
+input[type=radio].css-radio {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=radio].css-radio + label.css-labely {
+	padding-left:20px;
+	height:15px;
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=radio].css-radio:checked + label.css-labely {
+	background-position: 0 -15px;
+}
+label.css-labely {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_7d1e967c68c39221a9ad8a026a805769.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

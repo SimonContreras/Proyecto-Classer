@@ -1,0 +1,57 @@
+{% extends 'menu.html' %}
+
+{% block title %}Extracción{% endblock%}
+
+{% block ventanas %}
+    <li  class="hidden-xs">
+        <a href="{% url 'showdata' %}">Material</a>
+    </li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Clasificar <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="{% url 'classify_example' %}">Clasificar Texto</a></li>
+            <li><a href="{% url 'upload_file' %}">Entrenar Modelo</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Entidades <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="{% url 'entities_example' %}">Encontrar Entidades</a></li>
+        </ul>
+    </li>
+    <li >
+        <a  href="{% url 'urls' %}">Extracción</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <h4>URLs para extraer material</h4>
+        <div class="col-md-9">
+            <form method="post" action="">{% csrf_token %}
+                <div class="thumbnail">
+                    <div class="caption-full">
+                        {% for url in all_data %}
+                            <input type="checkbox" class="css-checkbox" id="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" name="eliminar_url"  value="{{ url.id }}">
+                            <label for="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" class="css-label lite-x-red" >
+                                <a href="{{ url.url }}" target="_blank">{{ url.url }}</a>
+                            </label>
+                            <br>
+                        {% endfor %}
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-danger">Eliminar seleccionadas</button>
+            </form>
+            <br>
+            <form method="post" action="">{% csrf_token %}
+                <div class="form-group">
+                    <input type="text" class="form-control" name="Url_annadida" placeholder="Url" >
+                </div>
+                <button type="submit" class="btn btn-success">Añadir</button>
+            </form>
+            <br>
+            <form method="post" action="">{% csrf_token %}
+                <button type="submit"  value = "1" name= "extraer" id = "extraer" class="btn btn-block btn-warning">Comenzar extracción</button>
+            </form>
+        </div>
+{% endblock %}
+

@@ -47,14 +47,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoProject/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2397">
+              <caret line="200" column="115" lean-forward="false" selection-start-line="200" selection-start-column="115" selection-end-line="200" selection-end-column="115" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#645#1486#0" expanded="false" />
+                <element signature="e#5761#6173#0" expanded="false" />
+                <element signature="e#6211#6670#0" expanded="false" />
+                <element signature="e#6696#7619#0" expanded="false" />
+                <element signature="e#9254#9363#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DjangoProject/DjangoProject/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -81,18 +109,15 @@
       <find>cha</find>
       <find>vid</find>
       <find>video</find>
+      <find>Entre</find>
+      <find>id</find>
+      <find>type</find>
+      <find>busC</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DjangoProject/app/textblob.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/app/clasificar.py" />
-        <option value="$PROJECT_DIR$/ScrapyProject/scrp.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/app/admin.py" />
-        <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/example_spider.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/static/css/test.css" />
-        <option value="$PROJECT_DIR$/DjangoProject/app/static/css/test.css" />
         <option value="$PROJECT_DIR$/DjangoProject/templates/index.html" />
         <option value="$PROJECT_DIR$/DjangoProject/templates/logout.html" />
         <option value="$PROJECT_DIR$/DjangoProject/templates/Imagenes.html" />
@@ -100,9 +125,7 @@
         <option value="$PROJECT_DIR$/DjangoProject/app/static/css/loginin.css" />
         <option value="$PROJECT_DIR$/DjangoProject/app/User.py" />
         <option value="$PROJECT_DIR$/DjangoProject/app/Usuario.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/console.sql" />
         <option value="dbtable:/62389687/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.auth_user" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/signup.html" />
         <option value="$PROJECT_DIR$/entities.py" />
         <option value="$PROJECT_DIR$/traductor.py" />
         <option value="$PROJECT_DIR$/DjangoProject/app/traductor.py" />
@@ -111,32 +134,41 @@
         <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/TextClassifier/classifier.py" />
         <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/TextClassifier/classifier.py" />
         <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/classifier.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/logloglog.html" />
         <option value="$PROJECT_DIR$/../Workbench-2/DjangoProject/templates/menu.html" />
         <option value="$PROJECT_DIR$/API-GOOGLE/text.py" />
         <option value="$PROJECT_DIR$/EntitiesClassifier/entities.py" />
-        <option value="$USER_HOME$/Downloads/scrp(1).py" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/upload_document.html" />
-        <option value="$PROJECT_DIR$/DjangoProject/app/static/css/shop-item.css" />
+        <option value="$PROJECT_DIR$/../../scrp(1).py" />
         <option value="$PROJECT_DIR$/TextClassifier/entities.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/app/forms.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/DjangoProject/settings.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/classify_example.html" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/entities_example.html" />
         <option value="$PROJECT_DIR$/TextClassifier/visio.py" />
+        <option value="$PROJECT_DIR$/TextClassifier/traductor.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/base.html" />
+        <option value="$PROJECT_DIR$/../../client_secret_43323858099-f4145ievj33146o0v1812698l2pchp6s.apps.googleusercontent.com(1).json" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/videos.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/app/cadena.py" />
+        <option value="$PROJECT_DIR$/TextClassifier/test.json" />
+        <option value="$PROJECT_DIR$/instructions" />
         <option value="$PROJECT_DIR$/DjangoProject/app/models.py" />
         <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/items.py" />
-        <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/settings.py" />
-        <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/scrp.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/app/views.py" />
         <option value="$PROJECT_DIR$/DjangoProject/DjangoProject/urls.py" />
-        <option value="$PROJECT_DIR$/TextClassifier/traductor.py" />
-        <option value="$PROJECT_DIR$/TextClassifier/classifier.py" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/base.html" />
+        <option value="dbtable:/e1d63ffe/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapurl" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/console.sql" />
+        <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/settings.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/logloglog.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/signup.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/app/forms.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/upload_document.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/app/static/css/shop-item.css" />
         <option value="$PROJECT_DIR$/DjangoProject/templates/menu.html" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/imagenes.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/classify_example.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/entities_example.html" />
+        <option value="$PROJECT_DIR$/TextClassifier/classifier.py" />
+        <option value="$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/scrp.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/urls.html" />
         <option value="$PROJECT_DIR$/DjangoProject/templates/showdata.html" />
-        <option value="$PROJECT_DIR$/DjangoProject/templates/videos.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/templates/imagenes.html" />
+        <option value="$PROJECT_DIR$/DjangoProject/app/views.py" />
+        <option value="$PROJECT_DIR$/TextClassifier/vision.py" />
+        <option value="$PROJECT_DIR$/DjangoProject/DjangoProject/settings.py" />
       </list>
     </option>
   </component>
@@ -178,8 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,24 +223,6 @@
               <option name="myItemId" value="Workbench" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TextClassifier" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScrapyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -238,7 +252,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="DjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workbench" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DjangoProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,26 +281,26 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Classer0942/Workbench" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="XML" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\ing\Nueva carpeta\Workbench\DjangoProject\templates" />
+      <recent name="C:\Users\SimónContreras\Downloads\Workbench(2)\Workbench\EntitiesClassifier" />
+      <recent name="C:\Users\SimónContreras\Downloads\Workbench(2)\Workbench\DjangoProject\templates" />
+      <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\ScrapyProject" />
+      <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\ScrapyProject\ScrapyProject" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SimónContreras\Downloads\Workbench(2)\Workbench\TextClassifier" />
       <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\ScrapyProject\ScrapyProject\spiders" />
       <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\DjangoProject\app" />
       <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\DjangoProject" />
       <recent name="C:\Users\SimónContreras\PycharmProjects\Workbench\ScrapyProject\ScrapyProject\spiders" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SimónContreras\Downloads\Workbench(2)\Workbench\EntitiesClassifier" />
-      <recent name="C:\Users\SimónContreras\Downloads\Workbench(2)\Workbench\DjangoProject\templates" />
-      <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\ScrapyProject" />
-      <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\ScrapyProject\ScrapyProject" />
-      <recent name="C:\Users\SimónContreras\Desktop\E3\Workbench\ScrapyProject\ScrapyProject\spiders" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -496,26 +528,36 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
+    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17868099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20552148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32344213" sideWeight="0.5030675" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30674848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08819018" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32047477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3115727" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33531156" sideWeight="0.4969325" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33382788" sideWeight="0.4969325" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39910978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3264095" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -558,102 +600,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/TextClassifier/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/TextClassifier/classifier.py" />
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/TextClassifier/classifier.py" />
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/classifier.py" />
-    <entry file="file://$PROJECT_DIR$/../Workbench-2/DjangoProject/templates/logloglog.html" />
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/logloglog.html">
+    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/scrp(sin videos).py" />
+    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapedvideo" />
+    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapeddata" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/settings.py" />
+    <entry file="file://$USER_HOME$/videos.html" />
+    <entry file="file://$PROJECT_DIR$/TextClassifier/visio.py" />
+    <entry file="file://$PROJECT_DIR$/TextClassifier/traductor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="545">
+          <caret line="389" column="0" lean-forward="false" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Workbench-2/DjangoProject/templates/menu.html" />
-    <entry file="file://$PROJECT_DIR$/../Workbench-2/DjangoProject/templates/showdata.html" />
-    <entry file="file://$PROJECT_DIR$/API-GOOGLE/text.py" />
-    <entry file="file://$PROJECT_DIR$/API-GOOGLE/client_key.json" />
-    <entry file="file://$USER_HOME$/Downloads/scrp(1).py" />
-    <entry file="dbDummy://dbtable:/62389687/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapedimage" />
-    <entry file="dbDummy://dbtable:/62389687/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapeddata" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/urls/resolvers.py" />
-    <entry file="file://C:/Python27/Lib/site-packages/django/utils/functional.py" />
-    <entry file="file://$PROJECT_DIR$/DjangoProject/app/static/css/shop-item.css">
+    <entry file="file://$PROJECT_DIR$/../../client_secret_43323858099-f4145ievj33146o0v1812698l2pchp6s.apps.googleusercontent.com(1).json" />
+    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapedimage" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/base.html" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/home.html" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/login.html" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/menu2.html" />
+    <entry file="dbDummy://dbtable:/8af286a9/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapeddata" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/app/cadena.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/app/static/css/loginin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/home.html">
+    <entry file="file://$PROJECT_DIR$/TextClassifier/client_key.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/classify_example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/entities_example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/upload_document.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.auth_user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextClassifier/entities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="39" lean-forward="false" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/TextClassifier/test.json" />
+    <entry file="file://$PROJECT_DIR$/instructions" />
+    <entry file="file://$PROJECT_DIR$/toDo.txt" />
     <entry file="file://$PROJECT_DIR$/DjangoProject/app/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -661,111 +645,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TextClassifier/visio.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TextClassifier/temp.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/app/tests.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b2f4ee5a-9964-470a-884d-09a218fe0f04/console.sql" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/scrp(2).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1295">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/scrp(sin videos).py" />
-    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapedvideo">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapedimage">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/994dc4aa/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapeddata">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/scrp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="18" lean-forward="true" selection-start-line="140" selection-start-column="18" selection-end-line="140" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="37">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/app/views.py">
+    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DjangoProject/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/settings.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2017">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/e1d63ffe/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapurl" />
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/app/static/css/shop-item.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/upload_document.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/classify_example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/videos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="71" lean-forward="false" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/DjangoProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="76" lean-forward="false" selection-start-line="37" selection-start-column="76" selection-end-line="37" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/entities_example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/DjangoProject/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -773,85 +748,150 @@
     <entry file="file://$PROJECT_DIR$/TextClassifier/classifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#93#197#0" expanded="false" />
+            <element signature="e#236#1294#0" expanded="false" />
+            <element signature="e#1330#1429#0" expanded="false" />
+            <element signature="e#1479#1625#0" expanded="false" />
+            <element signature="e#1676#2063#0" expanded="false" />
+            <element signature="e#2124#3263#0" expanded="false" />
+            <element signature="e#3316#4478#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TextClassifier/traductor.py">
+    <entry file="file://$PROJECT_DIR$/ScrapyProject/ScrapyProject/spiders/scrp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="389" column="0" lean-forward="false" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
+        <state relative-caret-position="70">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/DjangoProject/settings.py">
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/urls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="44" lean-forward="false" selection-start-line="134" selection-start-column="44" selection-end-line="134" selection-end-column="44" />
+        <state relative-caret-position="358">
+          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/menu2.html">
+    <entry file="file://$PROJECT_DIR$/DjangoProject/app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="372">
+          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding>
+            <element signature="e#206#650#0" expanded="false" />
+            <element signature="e#689#717#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/imagenes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="86" column="74" lean-forward="false" selection-start-line="86" selection-start-column="74" selection-end-line="86" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/logloglog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="459">
+          <caret line="27" column="46" lean-forward="false" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/c67411f5/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapedimage">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/showdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="117" column="57" lean-forward="false" selection-start-line="117" selection-start-column="53" selection-end-line="117" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DjangoProject/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="147" column="51" lean-forward="false" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
+        <state relative-caret-position="17">
+          <caret line="94" column="45" lean-forward="false" selection-start-line="94" selection-start-column="45" selection-end-line="94" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/imagenes.html">
+    <entry file="file://$USER_HOME$/Desktop/Classer0975/Workbench/TextClassifier/vision.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextClassifier/vision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TextClassifier/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-530">
+          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/showdata.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+    <entry file="dbDummy://dbtable:/c67411f5/a467d6f8-e9a1-4fab-871c-d9619b6b2ebd/main.app_scrapeddata">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/DjangoProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-          <folding />
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../videos.html">
+    <entry file="file://$PROJECT_DIR$/DjangoProject/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="2397">
+          <caret line="200" column="115" lean-forward="false" selection-start-line="200" selection-start-column="115" selection-end-line="200" selection-end-column="115" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#645#1486#0" expanded="false" />
+            <element signature="e#5761#6173#0" expanded="false" />
+            <element signature="e#6211#6670#0" expanded="false" />
+            <element signature="e#6696#7619#0" expanded="false" />
+            <element signature="e#9254#9363#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DjangoProject/templates/videos.html">
+    <entry file="file://$PROJECT_DIR$/DjangoProject/DjangoProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="125" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="125" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>

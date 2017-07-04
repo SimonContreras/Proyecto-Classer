@@ -1,20 +1,27 @@
 {% extends 'menu.html' %}
 
-{% block content %}
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-     <script>
-    $(document).ready(function(){
-    $("#image").click(function(){
-        $("#photosubmit").click();
-        });
-    });
-     </script>
+{% block title %} Subir Archivo {% endblock %}
 
-    {{ form.as_p }}
-      <button id = "image" style="cursor:pointer;" class="btn btn-default">Agregar Archivo</button>
-    <button type="submit" class="btn btn-default">Upload</button>
-  </form>
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <script>
+            $(document).ready(function(){
+                $("#image").click(function(){
+                    $("#photosubmit").click();
+                });
+            });
+        </script>
+
+        {{ form.as_p }}
+        {% if message == 'Subida Exitosa' %}
+            <br><span class="alert alert-success">{{ message }}</span><br><br>
+        {% elif  message  != '' %}
+            <br><span class="alert alert-danger">{{ message }}</span><br><br>
+        {% endif %}
+        <button id = "image" style="cursor:pointer;" class="btn btn-default">Agregar Archivo</button>
+        <button type="submit" class="btn btn-default">Upload</button>
+    </form>
 
 
 {% endblock %}

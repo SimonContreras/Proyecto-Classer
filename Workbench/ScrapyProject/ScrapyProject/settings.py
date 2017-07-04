@@ -12,8 +12,10 @@
 import os
 import sys
 import django
+cwd = os.getcwd()
+rpath = cwd + '../../DjangoProject/'
 
-DJANGO_PROJECT_PATH = 'C:/Users/SimónContreras/Desktop/E3/E4/Workbench/DjangoProject'
+DJANGO_PROJECT_PATH = rpath
 #'../../DjangoProject'
 DJANGO_SETTINGS_MODULE = 'DjangoProject.settings'
 sys.path.insert(0, DJANGO_PROJECT_PATH)

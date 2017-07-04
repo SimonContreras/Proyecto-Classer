@@ -18,6 +18,7 @@ class ScrapedData(AbstractData):
     code = models.BooleanField(default=False)
     classification = models.TextField(default="Default")
     tags = models.TextField(default="Default")
+    data_entrenamiento = models.BooleanField(default=False)
 
 
 class ScrapedImage(AbstractData):
@@ -31,9 +32,12 @@ class ScrapedVideo(models.Model):
     url = models.TextField(default="Default")
     information = models.TextField(default="Default")
 
+class ScrapUrl(models.Model):
+    url = models.TextField(default="Default")
+    propagacion_interna = models.BooleanField(default=False)
 
 class TrainingDocument(models.Model):
-    description = models.TextField(default="Descripción de la Data de entrenamiento contenida en el documento")
+    description = models.TextField(default="Descripcion de la Data de entrenamiento contenida en el documento")
     document = models.FileField(upload_to='documents/')
     upload_at = models.DateTimeField(auto_now=True)
 

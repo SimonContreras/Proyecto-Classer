@@ -3,27 +3,90 @@
 
 {% block title %}Imagenes{% endblock%}
 
+{% block buscador %}
+    <div class="hidden-sm hidden-md hidden-lg">
+        <form class="navbar-form form-inline navbar-right" method="post">{% csrf_token %}
+            <div class="form-group">
+                <input id="buscador" name = "buscador" type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-info btn-block "><span class="glyphicon glyphicon-search"></span> Buscar</button>
+        </form>
+    </div>
+{% endblock %}
+
 {% block Item %}
     <a class="list-group-item" href="{% url 'showdata' %}">Información</a>
-        <div id="collapse1" class="panel-collapse collapse" style="border-left:1px solid silver; border-right:1px solid silver;">
-            <ul>
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Analogías</a><br>
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejercicios</a><br>
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a> Ejemplos</a>
-            </ul>
-        </div>
     <a href="{% url 'imagenes' %}" class="list-group-item active">Imágenes</a>
     <a href="{% url 'videos' %}" class="list-group-item">Videos</a>
+    <br>
+    <button id="show" class="btn btn-success btn-block" >Editar Información</button><br>
+    <button id="hide" type="submit" class="btn btn-warning btn-block editar" style="display: none;">Cancelar Edición</button>
+    <br>
+    <div class="hidden-xs hidden-md hidden-lg">
+        <form class="navbar-form form-inline navbar-right" method="post">{% csrf_token %}
+            <div class="form-group">
+                <input id="buscador" name = "buscador" type="text" class="form-control" placeholder="Buscar">
+            </div>
+            <button type="submit" class="btn btn-info btn-block hidden-md hidden-lg"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+        </form>
+    </div>
 {% endblock %}
 
 {% block content %}
-    {% for img in all_data %}
+
+    <div class="hidden-xs hidden-sm col-md-3 pull-right">
+        <div style="position: fixed;">
+            <form class="navbar-form form-inline navbar-right" method="post">{% csrf_token %}
+                <div class="form-group">
+                    <input id="buscador" name = "buscador" type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <!-- Posee dos botones por estética pero ambos funcionan -->
+                <button type="submit" class="btn btn-info hidden-xs hidden-sm"><span class="glyphicon glyphicon-search"></span></button>
+                <button type="submit" class="btn btn-info btn-block hidden-md hidden-lg"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            </form>
+        </div>
+    </div>
+
+    {% for img, tags in all_data %}
         <div class="col-md-9">
             <div class="thumbnail">
                 <div class="caption-full">
+                    <button id="Boton{{ forloop.counter0 }}" type="button" class="btn btn-danger pull-right" data-toggle="collapse" data-target="#Tags{{ forloop.counter }}">
+                        Tags
+                    </button>
                     <h4> {{ img.topic }} </h4>
                     <a href="{{ img.url }}" target="_blank">{{ img.url }}</a>
-                    <img src= "{{ img.information }}" class="img-rounded" height="{{ img.height }}" width="{{ img.width }}" >
+                    <img src= "{{ img.information }}" class="img-rounded">
+                </div>
+            </div>
+        </div>
+        <div id="Tags{{ forloop.counter }}" class="col-md-9 collapse">
+            <div class="thumbnail">
+                <div class="caption-full">
+                    <h4>Tags</h4>
+                    <label class="editar" style="color: red;"> Seleccione los Tags que no correspondan:</label>
+                    <form method="post" id="edit">{% csrf_token %}
+                        <ul>
+                            {% for tag in tags %}
+                                <li class="editar" >
+                                    <input type="checkbox" class="css-checkbox" id="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" name="tags"  value="{{ tag }}">
+                                    <label for="checkbox{{ forloop.parentloop }}{{ forloop.counter }}" class="css-label lite-x-red" > {{ tag }}</label>
+                                </li>
+                                <li class="mostrar">
+                                    <label> {{ tag }}</label>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <button type="submit" name="id" value="{{ img.id }}" class="btn btn-primary editar">Guardar cambios</button>
+                    </form>
+                    <div id="AddTags{{ forloop.counter }}" class="editar">
+                        <form method="post" id="">{% csrf_token %}
+                            <br>
+                            <label>Ingrese el Tag que corresponda:</label> <br><br>
+                            <input type="text" name="Tagx" placeholder="Tag" required><br><br>
+                            <button type="submit" class="btn btn-success" name="id" value="{{ img.id }}">Agregar Tag</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

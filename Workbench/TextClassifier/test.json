@@ -1,0 +1,5 @@
+[
+    {"text": "Estoy cansado", "label": "Definición"},
+    {"text": "Un cliente de un supermercado ha pagado un total de 156 € por 24 l de leche, 6 kg de jamón serrano y 12 l de aceite de oliva. Calcular el precio de cada artículo, sabiendo que 1 l de aceite cuesta el triple que 1 l de leche y que 1 kg de jamón cuesta igual que 4 l de aceite más 4 l de leche.", "label": "Ejercicio"},
+    {"text": "Los lados de un triángulo miden 26, 28 y 34 cm. Con centro en cada vértice se dibujan tres de conferencias, tangente entre sí dos a dos. Calcular las longitudes de los radios de las circunferencias.", "label": "Ejercicio"}
+]

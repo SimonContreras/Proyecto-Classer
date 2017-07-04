@@ -35,7 +35,8 @@ class DocumentForm(forms.ModelForm):
         })
         self.fields['description'].widget.attrs \
             .update({
-            'class': 'form-control'
+            'class': 'form-control',
+            'rows': 1
         })
         self.fields['document'].label = ''
-        self.fields['description'].label = 'Descripción'
+        self.fields['description'].label = 'Descripcion'
