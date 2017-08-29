@@ -30,7 +30,7 @@ def signup(request):
             message = 'Datos incorrectos:'
             if form.cleaned_data.get('password1') != form.cleaned_data.get('password2'):
                 message += ' Passwords distintas.'
-            if form.cleaned_data.get('email') != form.cleaned_data.get('email2'):
+            if form.cleaned_data.get('email') != form.cleaned_data.get('username'):
                 message += ' E-mail distintos.'
     else:
         form = SignUpForm()
@@ -198,7 +198,7 @@ def file_upload(request):
             filename = str(request.FILES['document'])
             if filename.endswith('.json'):
                 form.save()
-                file_path = 'C:/Users/SimónContreras/Downloads/Classer099/Workbench/DjangoProject/media/documents' + filename
+                file_path = '../../documents' + filename
                 #update_classifier_file(file_path)
                 message = 'Subida Exitosa'
                 render(request, 'upload_document.html', {'form': form, 'message': message})
