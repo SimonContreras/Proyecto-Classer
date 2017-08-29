@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CRUD Etiquetas" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="CRUD Información" version="4">
   <OBJECT>
-    <ID name="CRUD Etiquetas" mc="Standard.UseCase" uid="d9a198ee-4f8e-4545-b996-885123194f2a"/>
-    <PID name="Parametrizador" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <ID name="CRUD Información" mc="Standard.UseCase" uid="d9a198ee-4f8e-4545-b996-885123194f2a"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[CRUD Etiquetas]]></ATT>
+      <ATT name="Name"><![CDATA[CRUD Información]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

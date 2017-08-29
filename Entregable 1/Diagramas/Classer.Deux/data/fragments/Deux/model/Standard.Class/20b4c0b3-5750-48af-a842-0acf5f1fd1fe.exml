@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ScrapedVideo" version="4">
+  <OBJECT>
+    <ID name="ScrapedVideo" mc="Standard.Class" uid="20b4c0b3-5750-48af-a842-0acf5f1fd1fe"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ScrapedVideo]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="format" mc="Standard.Attribute" uid="c9232ffa-8ed7-4142-8bb5-00749a790c45"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[format]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="769656a6-bf8f-4500-beca-d83196f15dee"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="AbstractData" mc="Standard.Class" uid="1fec5807-8643-43df-a002-b5111e8f9592"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ScrapedData" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="AbstractData" version="4">
   <OBJECT>
-    <ID name="ScrapedData" mc="Standard.Class" uid="1fec5807-8643-43df-a002-b5111e8f9592"/>
+    <ID name="AbstractData" mc="Standard.Class" uid="1fec5807-8643-43df-a002-b5111e8f9592"/>
     <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[ScrapedData]]></ATT>
+      <ATT name="Name"><![CDATA[AbstractData]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -184,12 +184,60 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="tags" mc="Standard.Attribute" uid="09d33120-1ada-4d63-91f3-fecd012a3836"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[tags]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="metadata" mc="Standard.Attribute" uid="c65d4ea0-eeb9-42c4-9051-c69acd7f03a5"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[metadata]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="6d9f9f0d-f8c6-4b06-80e8-242f4b31983b"/>
           <ATTRIBUTES>
-            <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+            <ATT name="Content"></ATT>
             <ATT name="MimeType"></ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>

@@ -19,13 +19,12 @@
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Académico" mc="Standard.Actor" uid="7dd5be48-b460-44d9-ac84-cc890dda5f96"/>
-        <COMPID name="Soporte" mc="Standard.Actor" uid="867bdd0a-0801-464c-b855-fabccd7f8b21"/>
-        <COMPID name="CRUD Académico" mc="Standard.UseCase" uid="c23a5bf7-73de-4f22-8f84-cccbc145d4dd"/>
-        <COMPID name="CRUD Etiquetas" mc="Standard.UseCase" uid="d9a198ee-4f8e-4545-b996-885123194f2a"/>
-        <COMPID name="actualizar criterio parametrizacion de etiqueta" mc="Standard.UseCase" uid="c0a08c0f-7fcd-47f0-bd64-267c6fd5f924"/>
-        <COMPID name="Ver información parametrizada" mc="Standard.UseCase" uid="d8f06488-5007-4887-965c-8e691641f4a1"/>
-        <COMPID name="CRUD Información parametrizada" mc="Standard.UseCase" uid="0301735e-699c-4a6c-9519-7f0bfab95270"/>
-        <COMPID name="Re-parametrizar información" mc="Standard.UseCase" uid="113d5b15-6e96-40ab-8599-50e2769d29ff"/>
+        <COMPID name="Ingresar al sistema" mc="Standard.UseCase" uid="c23a5bf7-73de-4f22-8f84-cccbc145d4dd"/>
+        <COMPID name="CRUD Información" mc="Standard.UseCase" uid="d9a198ee-4f8e-4545-b996-885123194f2a"/>
+        <COMPID name="Buscar información" mc="Standard.UseCase" uid="c0a08c0f-7fcd-47f0-bd64-267c6fd5f924"/>
+        <COMPID name="Entrenar Modelo" mc="Standard.UseCase" uid="d8f06488-5007-4887-965c-8e691641f4a1"/>
+        <COMPID name="Consultar Clasificación" mc="Standard.UseCase" uid="0301735e-699c-4a6c-9519-7f0bfab95270"/>
+        <COMPID name="Consultar entidades" mc="Standard.UseCase" uid="113d5b15-6e96-40ab-8599-50e2769d29ff"/>
         <COMPID name="Academico" mc="Standard.Class" uid="a7dbd007-39a4-4916-9439-6f82d3a572cb"/>
         <COMPID name="Informacion" mc="Standard.Class" uid="dbb4ed5b-94e9-481b-820b-3c664e1754ee"/>
         <COMPID name="Perfil parametrización" mc="Standard.Class" uid="3349b443-c1c5-49df-92bc-d499cb34783e"/>
@@ -35,17 +34,27 @@
         <COMPID name="video" mc="Standard.Class" uid="914dcfe4-17f0-416d-886a-78c00591e039"/>
         <COMPID name="User" mc="Standard.Class" uid="40fed02b-e029-4376-b687-58110709f3c7"/>
         <COMPID name="Spider" mc="Standard.Class" uid="06b7d30b-302b-4048-bd76-353485917c93"/>
-        <COMPID name="ScrapedData" mc="Standard.Class" uid="1fec5807-8643-43df-a002-b5111e8f9592"/>
-        <COMPID name="Url" mc="Standard.Class" uid="01c09252-5edb-49a0-88ac-6ff4e49d8555"/>
+        <COMPID name="AbstractData" mc="Standard.Class" uid="1fec5807-8643-43df-a002-b5111e8f9592"/>
         <COMPID name="ScrapedDataItem" mc="Standard.Class" uid="61345b5c-bf1d-4528-b1a7-f7e62b11d7ca"/>
         <COMPID name="SignUpForm" mc="Standard.Class" uid="26c53db8-978c-4311-8403-c4ee6f832bc1"/>
-        <COMPID name="ClassifiedData" mc="Standard.Class" uid="6e102817-ff84-496a-903a-5e3037216e22"/>
         <COMPID name="Classifier" mc="Standard.Class" uid="eabd2bfb-65bf-44b7-af9a-4d98167b53bf"/>
+        <COMPID name="ClassifyForm" mc="Standard.Class" uid="d01901cb-532b-40e6-977d-c7209977ff9a"/>
+        <COMPID name="DocumentForm" mc="Standard.Class" uid="e90cf362-8c4e-4318-b4e4-01be546b85d0"/>
+        <COMPID name="TrainingDocument" mc="Standard.Class" uid="5ca97df0-068b-4047-87de-9bdcac868b87"/>
+        <COMPID name="ScrapedData" mc="Standard.Class" uid="53421348-e11b-467e-a796-8ed743500842"/>
+        <COMPID name="ScrapedImage" mc="Standard.Class" uid="ba0b606b-2137-48e9-93b2-a3c47b998b54"/>
+        <COMPID name="ScrapedVideo" mc="Standard.Class" uid="20b4c0b3-5750-48af-a842-0acf5f1fd1fe"/>
+        <COMPID name="ScrapedImageItem" mc="Standard.Class" uid="8112abc7-722d-4474-823a-4ac02e25ef21"/>
+        <COMPID name="ScrapedVideoItem" mc="Standard.Class" uid="d9bd29bc-1081-4967-969a-5b4262e410be"/>
+        <COMPID name="ScrapUrl" mc="Standard.Class" uid="ec8caa7b-21e2-425a-8c0a-c0345cd1f3a8"/>
+        <COMPID name="link" mc="Standard.Class" uid="d2697675-0b41-4390-8b52-4eb7fd21ac98"/>
+        <COMPID name="clasificador" mc="Standard.Class" uid="0d490489-8c42-4fa0-8663-dae65e3139fe"/>
+        <COMPID name="CRUD entidades" mc="Standard.UseCase" uid="16815287-3cb5-46ee-968c-88c4fa4c7240"/>
+        <COMPID name="Recopilar Información" mc="Standard.UseCase" uid="87ee8279-497c-4512-aac7-3edfeec407fc"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Casos de Uso" mc="Standard.UseCaseDiagram" uid="6a6aa8c3-4a68-40e9-8e85-840e74e42139"/>
         <COMPID name="M.Dominio con atrib" mc="Standard.ClassDiagram" uid="e728fd69-3d43-4e23-a0b1-cc33e99d9312"/>
-        <COMPID name="M.Dominio sin atrib" mc="Standard.ClassDiagram" uid="d655d3e6-e636-402e-802e-4645bb7b5003"/>
         <COMPID name="Diagrama de Clases" mc="Standard.ClassDiagram" uid="ddf13981-88dc-453d-a215-934527e82418"/>
       </COMP>
     </DEPENDENCIES>

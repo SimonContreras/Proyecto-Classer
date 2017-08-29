@@ -212,11 +212,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="26ebd0e2-a314-4127-aa7a-795968bd7bc2"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="changeClasification" mc="Standard.Operation" uid="b91b877a-c8cd-4840-a766-23059ac6518b"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -918,11 +913,7 @@
                   <ATT name="Name"><![CDATA[r1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="ClassifiedData" mc="Standard.Class" uid="6e102817-ff84-496a-903a-5e3037216e22"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r2" mc="Standard.BindableInstance" uid="df470bae-442b-419c-91b0-75ce8ad4991b"/>
@@ -934,11 +925,7 @@
                   <ATT name="Name"><![CDATA[r2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Url" mc="Standard.Class" uid="01c09252-5edb-49a0-88ac-6ff4e49d8555"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r3" mc="Standard.BindableInstance" uid="c4512842-b42a-4415-93bd-cc481bfd658c"/>

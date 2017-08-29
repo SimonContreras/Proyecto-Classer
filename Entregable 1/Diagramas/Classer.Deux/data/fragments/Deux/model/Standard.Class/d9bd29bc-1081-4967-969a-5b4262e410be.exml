@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ScrapedVideoItem" version="4">
+  <OBJECT>
+    <ID name="ScrapedVideoItem" mc="Standard.Class" uid="d9bd29bc-1081-4967-969a-5b4262e410be"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ScrapedVideoItem]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Standard.Usage" uid="d137c5d8-30da-42e1-846d-151b6f3a9160"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="ScrapedVideo" mc="Standard.Class" uid="20b4c0b3-5750-48af-a842-0acf5f1fd1fe"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

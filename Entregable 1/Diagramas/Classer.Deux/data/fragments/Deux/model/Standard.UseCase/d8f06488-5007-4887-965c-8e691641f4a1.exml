@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ver información parametrizada" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Entrenar Modelo" version="4">
   <OBJECT>
-    <ID name="Ver información parametrizada" mc="Standard.UseCase" uid="d8f06488-5007-4887-965c-8e691641f4a1"/>
-    <PID name="Parametrizador" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <ID name="Entrenar Modelo" mc="Standard.UseCase" uid="d8f06488-5007-4887-965c-8e691641f4a1"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Ver información parametrizada]]></ATT>
+      <ATT name="Name"><![CDATA[Entrenar Modelo]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

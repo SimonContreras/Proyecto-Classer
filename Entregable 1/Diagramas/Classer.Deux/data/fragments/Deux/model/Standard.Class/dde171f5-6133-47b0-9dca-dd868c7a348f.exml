@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Etiqueta" version="4">
   <OBJECT>
     <ID name="Etiqueta" mc="Standard.Class" uid="dde171f5-6133-47b0-9dca-dd868c7a348f"/>
-    <PID name="Parametrizador" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -67,7 +67,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="7dd076eb-e1da-479d-8a6c-44e5826d1623"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="34092a6f-a4a3-4d3e-ab56-aef8a8eb130a"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -86,7 +86,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="49d87a2b-55e3-4d94-b630-827352d24cbb"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="8bc0aea3-2c82-4585-b161-f6d37f89d35e"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -104,13 +104,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="7dd076eb-e1da-479d-8a6c-44e5826d1623"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="34092a6f-a4a3-4d3e-ab56-aef8a8eb130a"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="clasificada por" mc="Standard.Association" uid="fc04ec75-1dfe-40c7-a228-a1c6ad5737ea"/>
+                      <ID name="compuesta de" mc="Standard.Association" uid="20a46077-6295-455d-9468-e9128334fd1b"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[clasificada por]]></ATT>
+                        <ATT name="Name"><![CDATA[compuesta de]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -120,13 +120,40 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="clasificada por" mc="Standard.Association" uid="fc04ec75-1dfe-40c7-a228-a1c6ad5737ea"/>
+              <COMPID name="compuesta de" mc="Standard.Association" uid="20a46077-6295-455d-9468-e9128334fd1b"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="34092a6f-a4a3-4d3e-ab56-aef8a8eb130a"/>
-        </REFOBJ>
+        <OBJECT>
+          <ID name="" mc="Standard.AssociationEnd" uid="0942584c-29f7-470b-a556-e7112145b3c5"/>
+          <ATTRIBUTES>
+            <ATT name="Aggregation">KindIsAssociation</ATT>
+            <ATT name="IsChangeable">true</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Opposite">
+              <REFOBJ>
+                <ID name="" mc="Standard.AssociationEnd" uid="cc5e80f6-700a-41d9-9193-2b12f84100f3"/>
+              </REFOBJ>
+            </COMP>
+            <COMP relation="Association">
+              <REFOBJ>
+                <ID name="asigna" mc="Standard.Association" uid="7d349c1e-e9b2-4cf8-86f0-9df850dae735"/>
+              </REFOBJ>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

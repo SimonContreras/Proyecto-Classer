@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ScrapUrl" version="4">
+  <OBJECT>
+    <ID name="ScrapUrl" mc="Standard.Class" uid="ec8caa7b-21e2-425a-8c0a-c0345cd1f3a8"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ScrapUrl]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="url" mc="Standard.Attribute" uid="24e516d4-79be-48cd-b2b5-1f34025a2001"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[url]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="prop_interna" mc="Standard.Attribute" uid="793c39c3-f0eb-43d1-bdfc-5cb99b881e62"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[prop_interna]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="boolean" mc="Standard.DataType" uid="00000004-0000-0005-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

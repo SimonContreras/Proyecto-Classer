@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Re-parametrizar información" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Consultar entidades" version="4">
   <OBJECT>
-    <ID name="Re-parametrizar información" mc="Standard.UseCase" uid="113d5b15-6e96-40ab-8599-50e2769d29ff"/>
-    <PID name="Diagramas" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
+    <ID name="Consultar entidades" mc="Standard.UseCase" uid="113d5b15-6e96-40ab-8599-50e2769d29ff"/>
+    <PID name="Classer" mc="Standard.Package" uid="b5f13238-52f0-4ca4-827f-67a333805299"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Re-parametrizar información]]></ATT>
+      <ATT name="Name"><![CDATA[Consultar entidades]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

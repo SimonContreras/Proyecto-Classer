@@ -277,7 +277,7 @@
       </COMP>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="c1b334f1-d7fe-402d-95e4-f2bd8066482e"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="170dbe0d-a30f-4829-a081-1507b8f70f90"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -294,9 +294,12 @@
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
+            <LINK relation="Target">
+              <ID name="ScrapUrl" mc="Standard.Class" uid="ec8caa7b-21e2-425a-8c0a-c0345cd1f3a8"/>
+            </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="5276eb14-17f8-4b5c-b346-d695fbf9b487"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="ca16fc5e-6d3e-4ddd-b925-2b69b006fad1"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -314,13 +317,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="c1b334f1-d7fe-402d-95e4-f2bd8066482e"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="170dbe0d-a30f-4829-a081-1507b8f70f90"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="usa" mc="Standard.Association" uid="10ef7ae6-c103-4bb5-9742-893b913e0df0"/>
+                      <ID name="" mc="Standard.Association" uid="cb09cf56-c69b-4c3e-b4a7-5e389bfad202"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[usa]]></ATT>
+                        <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -330,8 +333,34 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="usa" mc="Standard.Association" uid="10ef7ae6-c103-4bb5-9742-893b913e0df0"/>
+              <COMPID name="" mc="Standard.Association" uid="cb09cf56-c69b-4c3e-b4a7-5e389bfad202"/>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Standard.Usage" uid="0543ad0a-458e-4c96-ae74-98ef2376d9ab"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="DocumentForm" mc="Standard.Class" uid="e90cf362-8c4e-4318-b4e4-01be546b85d0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Usage" uid="f37b5634-9a0d-4111-b268-40d24479deb3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="ClassifyForm" mc="Standard.Class" uid="d01901cb-532b-40e6-977d-c7209977ff9a"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
